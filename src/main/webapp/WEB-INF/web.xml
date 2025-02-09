@@ -7,7 +7,7 @@
 
     <!-- Welcome File List -->
     <welcome-file-list>
-        <welcome-file>/ca1/home.jsp</welcome-file>
+        <welcome-file>/CA1/home.jsp</welcome-file>
     </welcome-file-list>
 
 </web-app>
