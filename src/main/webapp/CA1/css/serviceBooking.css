@@ -1,0 +1,315 @@
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 10%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fc;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 40px 0;
+}
+
+.booking-section h1 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.booking-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left Panel */
+.left-panel {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 32%;  /* Ensures this panel takes 1/3 of the space */
+    box-sizing: border-box;
+}
+
+.left-panel h2 {
+    color: #0056b3;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    font-size: 24px;
+}
+
+/* Service Items */
+.service-item {
+    background: #f8f9fc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    color: #0056b3;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.service-item .description {
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.service-item .quantity,
+.service-item .price {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Form Inputs */
+.datetime-picker,
+.property-type,
+.user-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.datetime-picker:focus,
+.property-type:focus,
+.user-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+    outline: none;
+}
+
+textarea.user-input {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Right Panel */
+.right-panel {
+    position: sticky;
+    top: 20px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 32%;  /* Ensures this panel also takes 1/3 of the space */
+    box-sizing: border-box;
+}
+
+.right-panel .summary-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-summary h3 {
+    color: #0056b3;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.service-name {
+    flex: 2;
+    color: #2c3e50;
+}
+
+.service-quantity {
+    flex: 1;
+    text-align: center;
+    color: #6c757d;
+}
+
+.service-price {
+    flex: 1;
+    text-align: right;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.total-price {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #f0f0f0;
+    font-size: 20px;
+    color: #0056b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Payment Section */
+.payment-section {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 2px solid #f0f0f0;
+}
+
+#card-element {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+}
+
+#card-errors {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Button Styles */
+.confirm-button {
+    width: 100%;
+    padding: 15px 25px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.confirm-button:hover:not(:disabled) {
+    background: #004494;
+}
+
+.confirm-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Spinner */
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer from home.css */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px 10%;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .booking-content {
+        flex-direction: column;  /* Stack the panels vertically */
+    }
+
+    .left-panel,
+    .right-panel {
+        flex: 1 1 100%;  /* Take full width when stacked */
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+
+    .summary-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .service-quantity,
+    .service-price {
+        text-align: left;
+    }
+
+    .total-price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

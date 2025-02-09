@@ -1,0 +1,189 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 10%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fc;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+}
+
+/* Filter Form Section */
+.filter-form {
+    padding: 40px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.filter-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.filter-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.filter-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.filter-form input[type="date"],
+.filter-form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.filter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-form button:hover {
+    background-color: #003d80;
+}
+
+/* Reports Table Styling */
+section.bookings-report, section.top-customers-report {
+    padding: 40px 10%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0056b3;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+table td {
+    font-size: 14px;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* No Data Available */
+p {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px 10%;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}

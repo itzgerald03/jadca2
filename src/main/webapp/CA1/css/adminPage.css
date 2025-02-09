@@ -1,0 +1,291 @@
+/* General Styling for Admin Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fc;
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 10%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Admin Page Layout */
+.container {
+    padding: 20px 10%;
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Admin Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0056b3;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+table td {
+    font-size: 14px;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table a {
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* General Input and Textbox Styling */
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #0056b3;
+    outline: none;
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #333;
+}
+
+/* Forms Container Styling */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+form button[type="button"] {
+    background-color: #ff9800;
+}
+
+form button[type="button"]:hover {
+    background-color: #e68900;
+}
+
+/* Specific Styling for Edit and Create Forms */
+.edit-form,
+.create-form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fc;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tablinks {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.tablinks:hover {
+    background-color: #ddd;
+}
+
+.tablinks.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Success and Error Messages */
+.success,
+.error {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: #e7f6e7;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+}
+
+.error {
+    background-color: #fce4e4;
+    color: #f44336;
+    border: 1px solid #f44336;
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px 10%;
+    margin-top: 40px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Filter Controls */
+.filter-controls {
+    margin: 10px 0;
+}
+
+.filter-controls input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.filter-controls button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.filter-controls button:hover {
+    background-color: #004494;
+}
