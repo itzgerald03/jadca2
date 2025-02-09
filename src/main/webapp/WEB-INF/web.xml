@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
-         http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+                             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
 
-    <display-name>JAD Assignment Web App</display-name>
-
-    <!-- Servlet configuration -->
-    <servlet>
-        <servlet-name>SalesReportServlet</servlet-name>
-        <servlet-class>servlets.SalesReportServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>SalesReportServlet</servlet-name>
-        <url-pattern>/SalesReportServlet</url-pattern>
-    </servlet-mapping>
-
-    <!-- Welcome file configuration -->
+    <!-- Welcome File List -->
     <welcome-file-list>
-        <welcome-file>home.jsp</welcome-file>
+        <welcome-file>/ca1/home.jsp</welcome-file>
     </welcome-file-list>
 
 </web-app>
